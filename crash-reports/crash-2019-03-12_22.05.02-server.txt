@@ -1,0 +1,92 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  Inventory Tweaks Coremod (InventoryTweaks-1.64+dev.146.jar)
+  DynamicSurroundingsCore (DynamicSurroundings-1.12.2-3.5.4.3-core.jar)
+Contact their authors BEFORE contacting forge
+
+// This doesn't make any sense!
+
+Time: 3/12/19 10:05 PM
+Description: Exception in server tick loop
+
+Missing Mods:
+	unknown : need [14.23.5.2779,): have 14.23.5.2768
+
+net.minecraftforge.fml.common.MissingModsException: Mod railcraft (Railcraft) requires [forge@[14.23.5.2779,)]
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:264)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:570)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_161, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 570286040 bytes (543 MB) / 709361664 bytes (676 MB) up to 1897922560 bytes (1810 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 41 mods loaded, 41 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                      | Version              | Source                                        | Signature                                |
+	|:----- |:----------------------- |:-------------------- |:--------------------------------------------- |:---------------------------------------- |
+	| U     | minecraft               | 1.12.2               | minecraft.jar                                 | None                                     |
+	| U     | mcp                     | 9.42                 | minecraft.jar                                 | None                                     |
+	| U     | FML                     | 8.0.99.99            | forge-1.12.2-14.23.5.2768-universal.jar       | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| U     | forge                   | 14.23.5.2768         | forge-1.12.2-14.23.5.2768-universal.jar       | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| U     | dsurroundcore           | 3.5.4.3              | minecraft.jar                                 | None                                     |
+	| U     | advanced_machines       | 61.0.1               | Advanced+Machines-61.0.1.jar                  | None                                     |
+	| U     | appliedenergistics2     | rv6-stable-6         | appliedenergistics2-rv6-stable-6.jar          | None                                     |
+	| U     | bno                     | 1.12.2-1.0.4.0       | BasicNetherOres-1.12.2-1.0.4.0.jar            | None                                     |
+	| U     | buildcraftcompat        | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcraftbuilders      | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcraftcore          | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcraftenergy        | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcraftfactory       | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcraftlib           | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcraftrobotics      | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcraftsilicon       | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | buildcrafttransport     | 7.99.22              | buildcraft-all-7.99.22.jar                    | None                                     |
+	| U     | codechickenlib          | 3.2.2.353            | CodeChickenLib-1.12.2-3.2.2.353-universal.jar | None                                     |
+	| U     | compactsolars           | 1.12.2-5.0.18.341    | CompactSolars-1.12.2-5.0.18.341-universal.jar | None                                     |
+	| U     | computercraft           | 1.80pr1              | ComputerCraft1.80pr1.jar                      | None                                     |
+	| U     | enderstorage            | 2.4.2.126            | EnderStorage-1.12.2-2.4.2.126-universal.jar   | None                                     |
+	| U     | energyconverters        | 1.2.1.11             | energyconverters_1.12.2-1.2.1.11.jar          | None                                     |
+	| U     | microblockcbe           | 2.6.1.81             | ForgeMultipart-1.12.2-2.6.1.81-universal.jar  | None                                     |
+	| U     | forgemultipartcbe       | 2.6.1.81             | ForgeMultipart-1.12.2-2.6.1.81-universal.jar  | None                                     |
+	| U     | minecraftmultipartcbe   | 2.6.1.81             | ForgeMultipart-1.12.2-2.6.1.81-universal.jar  | None                                     |
+	| U     | gravestone              | 1.10.2               | gravestone-1.10.2.jar                         | None                                     |
+	| U     | ic2                     | 2.8.109-ex112        | industrialcraft-2-2.8.109-ex112.jar           | None                                     |
+	| U     | inventorytweaks         | 1.64+dev.146.2180b27 | InventoryTweaks-1.64+dev.146.jar              | None                                     |
+	| U     | ironchest               | 1.12.2-7.0.59.842    | ironchest-1.12.2-7.0.59.842.jar               | None                                     |
+	| U     | jei                     | 4.15.0.268           | jei_1.12.2-4.15.0.268.jar                     | None                                     |
+	| U     | journeymap              | 1.12.2-5.5.4         | journeymap-1.12.2-5.5.4.jar                   | None                                     |
+	| U     | mantle                  | 1.12-1.3.3.42        | Mantle-1.12-1.3.3.42.jar                      | None                                     |
+	| U     | mrtjpcore               | 2.1.3.35             | MrTJPCore-1.12.2-2.1.3.35-universal.jar       | None                                     |
+	| U     | projecte                | 1.12.2-PE1.4.0       | ProjectE-1.12.2-PE1.4.0.jar                   | None                                     |
+	| U     | projectred-core         | 4.9.1.92             | ProjectRed-1.12.2-4.9.1.92-Base.jar           | None                                     |
+	| U     | projectred-integration  | 4.9.1.92             | ProjectRed-1.12.2-4.9.1.92-integration.jar    | None                                     |
+	| U     | projectred-transmission | 4.9.1.92             | ProjectRed-1.12.2-4.9.1.92-integration.jar    | None                                     |
+	| U     | railcraft               | 12.0.0-beta-5        | railcraft-12.0.0-beta-5.jar                   | None                                     |
+	| U     | tconstruct              | 1.12.2-2.12.0.115    | TConstruct-1.12.2-2.12.0.115.jar              | None                                     |
+	| U     | worldcontrol            | 1.0.18               | WorldControl-1.0.18.jar                       | None                                     |
+	| U     | orelib                  | 3.5.2.2              | OreLib-1.12.2-3.5.2.2.jar                     | None                                     |
+
+	Loaded coremods (and transformers): 
+Inventory Tweaks Coremod (InventoryTweaks-1.64+dev.146.jar)
+  invtweaks.forge.asm.ContainerTransformer
+DynamicSurroundingsCore (DynamicSurroundings-1.12.2-3.5.4.3-core.jar)
+  org.orecruncher.dsurround.asm.Transformer
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
